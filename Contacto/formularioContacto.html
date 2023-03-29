@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto con Nicolas Scolnik</title>
+</head>
+
+<body onload="instancia()">
+    
+    <form id="contacto" action="contacto.php" method="post">
+
+        <label for="nombre">Nombre:</label>
+        <input name="nombre" id="nombre" type="text" placeholder="Nombre" required pattern="[A-Z a-z]{3,50}"
+            title="Su nombre no puede poseer numeros ni caracteres. Entre 3 y 50 caracteres admitidos" />
+
+        <label for="empresa">Empresa:</label>
+        <input name="empresa" id="empresa" type="text" placeholder="Empresa" required pattern="[A-Z a-z]{3,50}"
+            title="La empresa no puede poseer numeros ni caracteres. Entre 3 y 50 caracteres admitidos" />
+
+        <label for="email">Correo:</label>
+        <input type="email" name="email" id="email" placeholder="E-mail" required />
+
+        <label for="telefono">Telefono de Contacto:</label>
+        <input name="telefono" id="telefono" type="text" placeholder="Telefono de Contacto" required
+            pattern="[0-9\-\+]{9,15}" title="Ingrese numero telefonico solo compuesto por numeros." />
+
+        <label for="viaContacto">Via de Contacto preferida</label>
+        <select class="viaContacto" name="viaContacto" id="viaContacto">
+            <option value="e-mail">E-mail</option>
+            <option value="telefono">Telefono</option>
+        </select>
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea name="mensaje" id="mensaje" placeholder="Deje su mensaje para Nicolas Scolnik" required minlength="10"
+            maxlength="300"></textarea>
+
+        <input class="success" type="submit" value="Enviar mensaje" id="Enviar" />
+
+        <button class="danger" type="reset">Reestablecer</button>
+
+</body>
+
+</html>

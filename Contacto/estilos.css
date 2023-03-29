@@ -1,0 +1,20 @@
+#contacto{
+    margin: auto;
+    width: 420px;
+    padding: 10px;
+    background-color: grey;
+    
+}
+
+#contacto input,
+#contacto select, 
+#contacto textarea, 
+#contacto button{
+    font-family: century gothic, sans-serif;
+    width: 400px;
+    margin: 2.5px;
+    padding: 5px 0; /* 5 top - 0 right - 5 bottom - 0 left */
+    border: 0;
+    border-radius: 7.5px;
+
+}
